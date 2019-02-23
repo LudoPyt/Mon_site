@@ -1,0 +1,73 @@
+
+      <%= form_with(model: projet, local: true) do |form| %>
+        <% if projet.errors.any? %>
+          <div id="error_explanation">
+            <h2><%= pluralize(projet.errors.count, "error") %> prohibited this projet from being saved:</h2>
+
+            <ul>
+            <% projet.errors.full_messages.each do |message| %>
+              <li><%= message %></li>
+            <% end %>
+            </ul>
+          </div>
+        <% end %>
+
+        <div class="field">
+          <%= form.label :title %>
+          <%= form.text_field :title %>
+        </div>
+
+        <div class="field">
+          <%= form.label :client %>
+          <%= form.text_field :client %>
+        </div>
+
+        <div class="field">
+          <%= form.label :lien %>
+          <%= form.text_field :lien %>
+        </div>
+
+        <div class="field">
+          <%= form.label :team %>
+          <%= form.text_area :team %>
+        </div>
+
+        <%# <div class="field">
+          <%= form.label :comment %>
+          <%# <%= form.text_area :comment %>
+        <%# </div> %>
+
+        <div class="field">
+          <%= form.label :technos %>
+          <%= form.text_area :technos %>
+        </div>
+
+        <div class="field">
+          <%= form.label :img1 %>
+          <%= form.text_field :img1 %>
+        </div>
+
+        <div class="field">
+          <%= form.label :img2 %>
+          <%= form.text_field :img2 %>
+        </div>
+
+        <div class="field">
+          <%= form.label :img3 %>
+          <%= form.text_field :img3 %>
+        </div>
+
+        <div class="field">
+          <%= form.label :img4 %>
+          <%= form.text_field :img4 %>
+        </div>
+
+        <div class="field">
+          <%= form.label :content %>
+          <%= form.text_area :content %>
+        </div>
+
+        <div class="actions">
+          <%= form.submit %>
+        </div>
+      <% end %>

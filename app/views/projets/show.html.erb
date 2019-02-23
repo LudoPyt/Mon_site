@@ -1,0 +1,75 @@
+<div id="details">
+  <div class="container">
+    <div class="row content">
+      <div class="col-12 projet_head">
+
+        <h1><%= @projet.title %><h1>
+        <p><span class= "link_site"><%= link_to "Voir le projet", @projet.lien.html_safe, :target => "_blank" %></span></p>
+
+        <h2 class='d-inline-block mr-4 mb-4'>Client</h2>
+        <p class="d-inline-block "><%= @projet.client %></p>
+      </div>
+
+      <div class="col-2">
+        <h2>Techno</h2>
+        <h3><%= @projet.technos.html_safe %></h3>
+      </div>
+
+      <div class="col-2">
+        <h2>Team</h2>
+        <h3><%= @projet.team.html_safe %></h3>
+      </div>
+
+      
+
+        <div class="col-8">
+          <h2>À propos</h2>
+          <p><%= @projet.content %></p>
+        </div>
+    </div>
+    <div class='row projet_img'>
+      <div class="col-6">
+        <div class="container_img">
+          <%=image_tag(@projet.img1, :alt => "Ludovic Pouyaut")%>
+        </div>
+      </div>
+
+      <div class="col-6">
+        <div class="container_img">
+          <%=image_tag(@projet.img2, :alt => "Ludovic Pouyaut")%>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="container_img">
+          <%=image_tag(@projet.img3, :alt => "Ludovic Pouyaut")%>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="container_img">
+          <%=image_tag(@projet.img4, :alt => "Ludovic Pouyaut")%>
+        </div>
+      </div>
+        <% projet_id = params[:id]%>
+        <% next_id = projet_id.to_i+1 %>
+        <% if Projet.exists?(next_id) %>
+          <div class="col-6 link_before">
+            <%= link_to "Projet précédent", projet_path(Projet.find(next_id)) %>
+          </div>
+          <div class="col-6 ">
+          </div>
+        <% end %>
+        <% previous_id = projet_id.to_i-1 %>
+        <% if Projet.exists?(previous_id) %>
+          <div class="col-6 ">
+          </div>
+          <div class="col-6 link_after">
+           <%= link_to "Projet suivant", projet_path(Projet.find(previous_id))%>
+          </div>
+        <% end %>
+    </div>
+
+
+<%# <%= link_to 'Edit', edit_projet_path(@projet) %>
+<%# <%= link_to 'Back', projets_path %>
+  </div>
+</div>
