@@ -16,6 +16,6 @@
 //= require turbolinks
 //= require_tree .
 
-//= hold_drag
-//= loading
+
+
 

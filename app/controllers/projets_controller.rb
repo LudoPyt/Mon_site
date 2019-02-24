@@ -2,6 +2,7 @@ class ProjetsController < ApplicationController
   before_action :authenticate_admin!, only: [:new, :edit, :update, :destroy]
   before_action :set_projet, only: [:show, :edit, :update, :destroy]
   add_breadcrumb "Menu", :root_path
+
   # GET /projets
   # GET /projets.json
   def index
@@ -14,7 +15,7 @@ class ProjetsController < ApplicationController
   def show
     name_proj = Projet.find(params[:id])
     add_breadcrumb "Projets", :projets_path
-    add_breadcrumb name_proj.title 
+    add_breadcrumb name_proj.title
   end
 
   # GET /projets/new
