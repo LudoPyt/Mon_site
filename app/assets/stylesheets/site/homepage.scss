@@ -12,11 +12,11 @@ body{
 
   .menu{
     
-    opacity: 0;
+   visibility: hidden;
     z-index: 100;
     position:fixed;
     top: 0;
-    left: -100%;
+    left: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
