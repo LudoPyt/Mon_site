@@ -16,15 +16,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <script src='/assets/animation/load.js'></script>
   </head>
 
   <body>
+    <div class="preload">
+        <div class="load-frame">
+          <div id="loader1">
+          </div>
+          <div id="loader2">
+          </div>
+        </div>
+    </div>
+
     <%= render :partial => "/site/header"  %>
+
     <div id='ariane'>
       <%= render_breadcrumbs :separator => ' / ' %> 
     </div>
     <%= yield %>
     <%= render :partial =>"/site/footer" %>
-
+    <script src='/assets/animation/load.js'></script>
   </body>
 </html>
