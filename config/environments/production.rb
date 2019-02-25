@@ -23,7 +23,7 @@ Rails.application.configure do
   config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present?
 
   #compile fonts
-  config.assets.paths << Rails.root.join('app', 'assets', 'stylesheets', 'fonts')
+  config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
   config.assets.precompile += %w( .svg .eot .woff .ttf )
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier

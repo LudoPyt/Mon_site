@@ -1,19 +1,19 @@
 @font-face {
     font-family: 'webfontregular',;
-    src: url('fonts/webtype-webfont.woff2') format('woff2'),
-         url('fonts/webtype-webfont.woff') format('woff');
+    src: font-url('/assets/webtype-webfont.woff2') format('woff2'),
+         font-url('/assets/webtype-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 @font-face{
   font-family: 'apercu';
-  src: url("fonts/apercu-regular-pro.ttf") format('truetype');
+  src: font-url("/assets/apercu-regular-pro.ttf") format('truetype');
     
 }
 
 @font-face{
   font-family: 'louize';
-  src: url("fonts/LouizeRegular.otf") format('opentype');
+  src: font-url("/assets/LouizeRegular.otf") format('opentype');
     
 }
