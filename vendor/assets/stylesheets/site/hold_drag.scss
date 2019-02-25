@@ -1,0 +1,21 @@
+#wrapper {
+  height: 200px;
+  padding-right: 50px;
+  z-index: 2;
+
+  #hold{
+      height: 100%;
+      width: 5px;
+      background-color: #242526;
+      border-radius: 10px;
+      transform: rotateZ(180deg);
+
+    #bar {
+
+        width: 5px;
+        height: 20px;
+        background-color: #F4F0E9;
+        border-radius: 10px;
+    }
+  }
+}

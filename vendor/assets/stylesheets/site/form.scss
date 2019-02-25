@@ -1,0 +1,12 @@
+@import "base/var_mixin";
+#form{
+    .content{
+        text-align: center;
+        input, textarea{
+            margin: 15px;
+            font-size: 10px;
+            font-family: $police_second;
+            width: 100%;
+        }
+    }
+}
