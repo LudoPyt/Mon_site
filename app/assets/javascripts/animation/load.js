@@ -9,7 +9,7 @@ function preloader(){
             clearInterval(id);
             TweenMax.fromTo("#preload", 0.5,{autoAlpha:1}, {autoAlpha:0, ease: Power1.easeInOut});
         } else {
-            loading= loading+2;
+            loading= loading+4;
 
         }
     }
