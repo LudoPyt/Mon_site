@@ -7,9 +7,9 @@ function preloader(){
     function frame(){
         if(loading == 100) {
             clearInterval(id);
-            document.getElementById("preload").style.display = 'none';
+            TweenMax.fromTo("#preload", 0.5,{autoAlpha:1}, {autoAlpha:0, ease: Power1.easeInOut});
         } else {
-            loading= loading+1;
+            loading= loading+2;
 
         }
     }

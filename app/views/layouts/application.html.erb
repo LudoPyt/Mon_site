@@ -20,12 +20,10 @@
   </head>
 
   <body onload="preloader()">
-    <div class="preload">
+    <div id="preload">
         <div class="load-frame">
-          <div id="loader1">
-          </div>
-          <div id="loader2">
-          </div>
+          <div id="loader1"></div>
+          <div id="loader2"></div>
         </div>
     </div>
 
@@ -36,6 +34,6 @@
     </div>
     <%= yield %>
     <%= render :partial =>"/site/footer" %>
-    <script src='/assets/animation/load.js'></script>
+    
   </body>
 </html>
