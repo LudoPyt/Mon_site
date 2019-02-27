@@ -5,8 +5,7 @@ class SiteController < ApplicationController
   end
 
   def contact
-    add_breadcrumb "Menu", :root_path
-    add_breadcrumb "Contact", :contact_path
+    
   end
 
 
