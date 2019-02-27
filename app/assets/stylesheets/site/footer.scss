@@ -21,6 +21,9 @@
       padding: 20px 50px;
       font-size: 15px;
       font-family: $police_text;
+        &:hover{
+            color: $color_text;
+        }
     }
   }
 }
