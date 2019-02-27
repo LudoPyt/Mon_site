@@ -10,7 +10,6 @@
 
             .structure{
                 position:relative;
-                
                 .all_img{
                     position: absolute;
                     top:50%;
@@ -34,6 +33,7 @@
                     width: 500px;
                     height: 300px;
                     .resize{
+                        overflow: hidden;
                         width: 100%;
                         height:auto;
                         h1{
