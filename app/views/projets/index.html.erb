@@ -1,7 +1,7 @@
 
 <div id="all_projet">
   <div class="container">
-    <% @projets.id.reverse_each do |projet| %>
+    <% @projets.order(id: :desc).each do |projet| %>
       <div class='content'>
         <div class="structure">
               <div class='all_img'>
