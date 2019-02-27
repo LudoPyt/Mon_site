@@ -32,11 +32,10 @@
                     transform: translate(-50%, -50%);
                     padding: 30px;
                     width: 500px;
-                    height: auto;
-                    overflow: hidden;
+                    height: 300px;
                     .resize{
-                        width: auto;
-                        height:auto;
+                        width: 100%;
+                        height:100%;
                         h1{
                             color:transparent;
                             -webkit-text-stroke: 1px $color_text;
