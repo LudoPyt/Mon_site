@@ -16,6 +16,6 @@ module MonSite
     # the framework and any gems in your application.
     config.assets.paths << "#{Rails}/vendor/assets/fonts"
     config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
-    config.assets.initialize_on_precompile = false
+    
   end
 end
