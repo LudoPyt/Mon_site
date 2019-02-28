@@ -1,7 +1,7 @@
 class ProjetsController < ApplicationController
-  before_action :authenticate_admin!, only: [:new, :edit, :update, :destroy]
+  # before_action :authenticate_admin!, only: [:new, :edit, :update, :destroy]
   before_action :set_projet, only: [:show, :edit, :update, :destroy]
-  add_breadcrumb "Menu", :root_path
+  add_breadcrumb "Accueil", :root_path
 
   # GET /projets
   # GET /projets.json

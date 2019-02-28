@@ -28,14 +28,34 @@
           <div id="loader2"></div>
         </div>
     </div>
+    <div class="menu">
+    <div class="menu_detail">
+    <%= link_to "À propos", a_propos_path %>
+      <div class="menu_p">
+        <p>Si tu veux mieux me connaitre</p>
+      </div>
+    </div>
+    <div class="menu_detail">
+    <%= link_to "Projets", projets_path %>
+      <div class="menu_p">
+        <p>Jette un petit coup d'oeil à mon travail</p>
+      </div>
+    </div>
+    <div class="menu_detail">
+     <%= link_to "Contact", contact_me_path %>
+      <div class="menu_p">
+        <p>N'aies pas peur je ne mords pas</p>
+      </div>
+    </div>
+  </div>
 
     <%= render :partial => "/site/header"  %>
 
-    <div id='ariane'>
+    <div class='ariane'>
       <%= render_breadcrumbs :separator => ' / ' %> 
     </div>
     <%= yield %>
     <%= render :partial =>"/site/footer" %>
-    
+     <script src='/assets/animation/onclick.js'></script>
   </body>
 </html>

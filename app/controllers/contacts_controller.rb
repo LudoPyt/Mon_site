@@ -1,7 +1,8 @@
 class ContactsController < ApplicationController
   before_action :set_contact, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_admin!, only: [:index, :show, :destroy]
-
+  add_breadcrumb "Accueil", :root_path
+  add_breadcrumb "Contact", :contact_me_path
   # GET /contacts
   # GET /contacts.json
   def index
@@ -15,8 +16,6 @@ class ContactsController < ApplicationController
 
   # GET /contacts/new
   def new
-    add_breadcrumb "Menu", :root_path
-    add_breadcrumb "Contact", :contact_me_path
     @contact = Contact.new
   end
 

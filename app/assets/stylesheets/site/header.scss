@@ -1,22 +1,43 @@
 @import "base/var_mixin";
 
 
-      .header{
-        z-index: 9999;
-        position: fixed;
-        top:0;
-        left:0;
-        padding: 30px;
-        h2{
-          text-transform: none;
-          font-size: 13px;
-          color: $color_text;
-          &:hover{
-            box-shadow: none;
-            outline: none;
+        .header{
+          z-index: 9999;
+          position: fixed;
+          top:0;
+          left:0;
+          padding: 30px;
+          h2{
+            text-transform: none;
+            font-size: 13px;
+            color: $color_text;
+            &:hover{
+              box-shadow: none;
+              outline: none;
+            }
+          }
+          a{
+            text-decoration: none;
           }
         }
-        a{
-          text-decoration: none;
+        .btn-menu{
+          position: fixed;
+          right:0;
+          top:0;
+          padding: 30px;
+          h3{
+            padding-right: 50px;
+            text-transform: none;
+            font-size: 13px;
+            color: $color_text;
+            font-family: $police_text;
+            &:hover{
+              box-shadow: none;
+              outline: none;
+              transition:0.25s;
+              transform: scale(1.1);
+              text-decoration: none;
+            }
+          }
         }
-      }
+      
