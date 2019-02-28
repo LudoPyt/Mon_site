@@ -1,13 +1,7 @@
 class SiteController < ApplicationController
-  
-  
+
   def home
   end
-
-  def contact
-    
-  end
-
 
   def a_propos
     add_breadcrumb "Menu", :root_path
