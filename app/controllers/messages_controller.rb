@@ -1,6 +1,5 @@
 class MessagesController < ApplicationController
-    add_breadcrumb "Menu", :root_path
-    add_breadcrumb "Contact", :contact_path
+    
     def new
         @message = Message.new
       end

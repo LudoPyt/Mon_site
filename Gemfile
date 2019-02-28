@@ -4,6 +4,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.4.3'
 
+#mailgun
+gem 'mailgun-ruby', '~>1.1.6'
 #cloudinary
 gem 'cloudinary'
 gem 'activestorage-cloudinary-service'

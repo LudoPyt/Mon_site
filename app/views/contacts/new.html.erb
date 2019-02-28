@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-12 col-md-9">
       <h1>Contact</h1>
-        <%= form_with(model: @message) do |f| %>
+        <%= form_with(model: @contact, local: true) do |f| %>
 
           <div class="form-row">
             <div class="form-group col-md-6">
@@ -24,7 +24,7 @@
 
           <div class="form-group">
             <label for="message">Votre message</label>
-            <%= f.text_area :contenu, :class=>"form-control", size: '6x8'  %>
+            <%= f.text_area :message, :class=>"form-control", size: '6x8'  %>
 
           </div>
           <span class= "spam"><%= f.submit 'Spammez-moi'%></span>
@@ -34,3 +34,4 @@
     </div>
   </div>
 </div>
+
