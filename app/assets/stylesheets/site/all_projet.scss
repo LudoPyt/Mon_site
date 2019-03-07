@@ -5,14 +5,14 @@
         .content{
             display: flex;
             flex-direction: column;
-            min-height: 100vh;
+            min-height: 80vh;
             justify-content: center;
 
             .structure{
                 position:relative;
                 .all_img{
                     position: absolute;
-                    top:50%;
+                    top:25%;
                     left:50%;
                     transform: translate(-50%, -50%);
                     width: 600px;
@@ -33,6 +33,7 @@
                     width: 600px;
                     height: 350px;
                     .resize{
+                        
                         width: 100%;
                         height:auto;
                         h1{
@@ -47,7 +48,9 @@
                             opacity: 0.8;
                         }
                         a{
-                            opacity: 1;
+                            &:hover{
+                                color: $color_text;
+                            }
                         }
                         .link_projet{
                             padding-left: 15px;
