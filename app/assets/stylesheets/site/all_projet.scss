@@ -5,7 +5,7 @@
         .content{
             display: flex;
             flex-direction: column;
-            min-height: 100vh;
+            min-height: 80vh;
             justify-content: center;
 
             .structure{
@@ -56,7 +56,7 @@
                             padding-left: 15px;
                             padding-top: 15px;
                             a{
-                                font-size: 18px;
+                                font-size: 25px;
                                 position: relative;
                                 color: $color_text;
                                 &:before{
