@@ -15,7 +15,7 @@ $('.content').each(function(){
     var scroll = new ScrollMagic.Scene({
         triggerElement:this,
         triggerHook:0,
-        duration: "65%"
+        duration: "45%"
     })
     .setPin(this)
     .setTween(scroll_anim)
