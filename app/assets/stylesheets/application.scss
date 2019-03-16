@@ -18,6 +18,7 @@
 @import "base/var_mixin";
 @import "base/preload";
 @import "site/header";
+@import "site/menu";
 @import "site/footer";
 @import "site/hold_drag";
 @import "site/homepage";
@@ -25,3 +26,7 @@
 @import "site/contact";
 @import "site/projets";
 @import "site/form";
+
+@media screen and (min-width: 0px) and (max-width: 1100px) {
+    .fullscreen { display: none;}  
+  }

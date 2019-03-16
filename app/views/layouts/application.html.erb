@@ -3,6 +3,7 @@
   <head>
     <title>Ludovic Pouyaut</title>
     <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%= csp_meta_tag %>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <%= stylesheet_link_tag    'application', media: 'all'%>
@@ -16,46 +17,34 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
-    
+
   </head>
 
   <body onload="preloader()" >
-  
 
-  <div id="preload">
-        <div class="load-frame">
-          <div id="loader1"></div>
-          <div id="loader2"></div>
+    <div id="preload">
+          <div class="load-frame">
+            <div id="loader1"></div>
+            <div id="loader2"></div>
+          </div>
+    </div>
+    <div class='real_screen'>
+      <h2>Le responsive design arrive bientôt, en attendant </h2>
+      <img src="https://media.giphy.com/media/edXbRv1oCC14k/giphy.gif" >
+      <h3>Achète toi un vrai écran</h3>
+    </div>
+    <div class="fullscreen">
+        <%= render :partial => "/site/header"  %>
+        <%= render :partial => "/site/header"  %>
+
+        <div class='ariane'>
+          <%= render_breadcrumbs :separator => ' / ' %>
         </div>
-    </div>
-    <div class="menu">
-    <div class="menu_detail">
-    <%= link_to "À propos", a_propos_path %>
-      <div class="menu_p">
-        <p>Si tu veux mieux me connaitre</p>
-      </div>
-    </div>
-    <div class="menu_detail">
-    <%= link_to "Projets", projets_path %>
-      <div class="menu_p">
-        <p>Jette un petit coup d'oeil à mon travail</p>
-      </div>
-    </div>
-    <div class="menu_detail">
-     <%= link_to "Contact", contact_me_path %>
-      <div class="menu_p">
-        <p>N'aies pas peur je ne mords pas</p>
-      </div>
-    </div>
-  </div>
 
-    <%= render :partial => "/site/header"  %>
+          <%= yield %>
 
-    <div class='ariane'>
-      <%= render_breadcrumbs :separator => ' / ' %> 
+      <%= render :partial =>"/site/footer" %>
     </div>
-    <%= yield %>
-    <%= render :partial =>"/site/footer" %>
      <script src='/assets/animation/onclick.js'></script>
   </body>
 </html>

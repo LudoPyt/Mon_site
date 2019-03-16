@@ -6,67 +6,10 @@
 
 body{
   background-color: $color_bg;
-  // background-image: $bg;
   color:$color_text;
   font-family: $police_text;
 
-  .menu{
-    
-   visibility: hidden;
-    z-index: 100;
-    position:fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    background-color: $color_bg;
-    .menu_detail{
-      width: 80%;
-      display: flex;
-      &:hover{
-        a{
-          transition: 0.5s ease-in-out;
-          color:$color_bg;
-        }
-        .menu_p{
-          p{
-            transition: 0.5s ease-in-out;
-            opacity: 1;
-          }
-        }
-      }
-      a{
-        font-size: 75px;
-        font-family: $police_second;
-        text-transform: none;
-        -webkit-user-select: none;
-        transition: 0.5s ease-in-out;
-        text-decoration: none;
-        -webkit-text-stroke: 1px $color_text;
-          text-stroke: 1px $color_text;
-        
-      }
-      .menu_p{
-        position: relative;
-        p{
-          transition: 0.5s ease-in-out;
-          opacity: 0.5;
-          white-space: nowrap;
-          position:absolute;
-          top:50%;
-          left:20px;
-          transform: translateY(-50%);
-          font-family: 'louize';
-          font-size: 13px;
-
-         }
-      }
-    }
-  }
+  
 
   .sayhello{
 

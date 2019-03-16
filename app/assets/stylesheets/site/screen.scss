@@ -1,0 +1,84 @@
+@import "base/var_mixin";
+.real_screen{
+    background-color: $color_bg;
+    top: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    img{
+        width: 50vw;
+        height:auto;
+        top:50%;
+        left:50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+    h2{
+      font-size: 20px;
+      position: absolute;
+      top:25%;
+      left:50%;
+      transform: translateX(-50%);
+      text-transform: none;
+      width: 100%;
+      text-align:center;
+    }
+    h3{
+        font-size: 50px;
+        font-family: $police_text;
+        top:50%;
+        left:50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        animation: clign 1s infinite;
+        width: 100%;
+        text-align:center;
+
+    }
+
+}
+
+@keyframes clign{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@media screen and (min-width: 0px) and (max-width: 700px) {
+    .real_screen{
+        img{
+        width: 70vw;
+        }
+        display: flex;
+        h3{
+            font-size: 20px;
+        }
+        h2{
+          font-size: 15px;
+        }
+     }
+  }
+@media screen and (min-width: 700px) and (max-width: 900px) {
+.real_screen{
+    display: flex;
+    h3{
+        font-size: 35px;
+    }
+ }
+}
+@media screen and (min-width: 900px) and (max-width: 1100px) {
+    .real_screen{
+        display: inline-block;
+        h3{
+            font-size: 50px;
+        }
+     }
+    }
+
+  @media screen and (min-width: 1100px) and (max-width: 2000px) {
+    .real_screen { display: none;}
+  }
