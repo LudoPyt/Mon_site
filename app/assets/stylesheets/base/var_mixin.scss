@@ -6,10 +6,16 @@ $police_text : "webfontregular";
 $police_second: "apercu";
 
 body{
+
   background-color: $color_bg;
+  background-image: url('/assets/bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: none;
   color:$color_text;
   font-family: $police_text;
-  
+
 }
 
 h1, h3, h4, a, p{
