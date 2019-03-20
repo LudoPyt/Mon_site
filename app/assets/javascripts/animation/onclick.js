@@ -13,4 +13,4 @@ function menuAppear(){
 }
 
 $('#appear').click(menuAppear);
-$('#appear_hold').click(menuAppear);
+
