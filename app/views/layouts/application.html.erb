@@ -34,19 +34,19 @@
       <h3>Achète toi un vrai écran</h3>
     </div>
        <div class="menu">
-        <div class="menu_detail">
+        <div class="menu_detail detail1">
         <%= link_to "À propos", a_propos_path %>
           <div class="menu_p">
             <p>Si tu veux mieux me connaitre</p>
           </div>
         </div>
-        <div class="menu_detail">
+        <div class="menu_detail detail2">
         <%= link_to "Projets", projets_path %>
           <div class="menu_p">
             <p>Jette un petit coup d'oeil à mon travail</p>
           </div>
         </div>
-        <div class="menu_detail">
+        <div class="menu_detail detail3">
         <%= link_to "Contact", contact_me_path %>
           <div class="menu_p">
             <p>N'aies pas peur je ne mords pas</p>
@@ -59,10 +59,11 @@
         <div class='ariane'>
           <%= render_breadcrumbs :separator => ' / ' %>
         </div>
+        <div class='cursor'></div>
 
-          <%= yield %>
+        <%= yield %>
 
-      <%= render :partial =>"/site/footer" %>
+        <%= render :partial =>"/site/footer" %>
     </div>
      <script src='/assets/animation/onclick.js'></script>
   </body>

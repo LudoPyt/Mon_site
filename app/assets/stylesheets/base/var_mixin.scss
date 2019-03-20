@@ -15,6 +15,19 @@ body{
   background-repeat: none;
   color:$color_text;
   font-family: $police_text;
+  user-select: none;
+  .cursor{
+        pointer-events: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: solid 1px $color_text;
+        background-color: none;
+      }
 
 }
 

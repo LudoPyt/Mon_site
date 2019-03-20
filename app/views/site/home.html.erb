@@ -1,20 +1,24 @@
-
+<div class='drag_cursor'>
+   <%= image_tag 'cursor_arrow.png' %>
+</div>
 <div class= "container">
 
+
+
   <div class="menu">
-    <div class="menu_detail">
+    <div class="menu_detail det1">
     <%= link_to "À propos", a_propos_path %>
       <div class="menu_p">
         <p>Si tu veux mieux me connaitre</p>
       </div>
     </div>
-    <div class="menu_detail">
+    <div class="menu_detail det2">
     <%= link_to "Projets", projets_path %>
       <div class="menu_p">
         <p>Jette un petit coup d'oeil à mon travail</p>
       </div>
     </div>
-    <div class="menu_detail">
+    <div class="menu_detail det3">
      <%= link_to "Contact", contact_me_path %>
       <div class="menu_p">
         <p>N'aies pas peur je ne mords pas</p>
@@ -23,19 +27,19 @@
   </div>
 
 
+
   <div class="sayhello">
-    <%# <div id="wrapper">
-      <div id="hold">
-            <div id="bar">
-
-            </div>
+    <div class='hold_drag'>
+      <div class="barre">
+        <div class="rempli drag">
+          <div class="begin"></div>
         </div>
-    </div> %>
+      </div>
+    </div>
 
-  <h1>Salut toi,<br>Je suis <span class= 'effect_border'>Ludo</span>,<br> Ton développeur web!
-  </h1>
+    <h1>Salut toi,<br>Je suis <span class= 'effect_border'>Ludo</span>,<br> Ton développeur web!</h1>
 
-  <p id="appear_hold">C'est par ici pour continuer !</p>
+    <p id="appear_hold">C'est par ici pour continuer !</p>
   </div>
 
 </div>

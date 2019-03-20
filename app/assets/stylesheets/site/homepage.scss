@@ -9,9 +9,33 @@ body{
   color:$color_text;
   font-family: $police_text;
 
+  .drag_cursor{
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: solid 1px $color_text;
+    background-color: none;
+
+    img {
+      opacity: 0;
+      user-select: none;
+      position: absolute;
+      left: 50%;
+      top: 130%;
+      transform: translateX(-50%);
+      width: 8px;
+      height: 8px;
+    }
+      }
+
   .menu{
 
-    visibility: hidden;
+
      z-index: 100;
      position:fixed;
      top: 0;
@@ -22,8 +46,9 @@ body{
      align-items: center;
      width: 100vw;
      height: 100vh;
-     background-color: $color_bg;
+     background-color: none;
      .menu_detail{
+      visibility: hidden;
        width: 80%;
        display: flex;
        &:hover{
@@ -97,6 +122,33 @@ body{
         color:$color_bg;
         -webkit-text-stroke: 1px $color_text;
         text-stroke: 1px $color_text;
+      }
+    }
+
+    .hold_drag{
+      position: relative;
+      left:-5%;
+      transform: translate(-50%,-50%);
+
+      .barre{
+        height: 300px;
+        position:absolute;
+        width: 1px;
+        background-color: rgba(244,240,217,.5);
+        top: 50%;
+        transform: translateY(-50%);
+
+        .rempli{
+          background-color: rgba(244,240,217,1);
+          opacity:1;
+          width: 1px;
+          height: 10%;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+
+        }
+
       }
     }
   }
