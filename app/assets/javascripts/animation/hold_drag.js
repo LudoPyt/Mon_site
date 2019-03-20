@@ -22,7 +22,7 @@ function Appear() {
   let boum = new TimelineMax();
   boum.add([
     TweenMax.to(".drag_cursor", .2, {display: "none", ease: Power1.easeOut}),
-    TweenMax.to(".menu", .1, {autoAlpha:1, ease: Power1.easeOut}),
+    TweenMax.fromTo(".menu", .1,{autoAlpha:0}, {autoAlpha:1, ease: Power1.easeInOut}),
     TweenMax.fromTo(".det1", 0.5,{ x:"0%", y:"200%",autoAlpha:0}, {x:"0%",y:"0%",autoAlpha:1, ease: Power4.easeInOut}),
     TweenMax.fromTo(".det2", 0.7,{ x:"0%", y:"200%",autoAlpha:0}, {x:"0%",y:"0%",autoAlpha:1, ease: Power4.easeInOut}),
     TweenMax.fromTo(".det3", 0.9,{ x:"0%", y:"200%",autoAlpha:0}, {x:"0%",y:"0%",autoAlpha:1, ease: Power4.easeInOut}),
