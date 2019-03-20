@@ -19,8 +19,8 @@
 
 function Appear() {
 
-  let myMenu = new TimelineMax();
-  myMenu.add([
+  let mymenu = new TimelineMax();
+  mymenu.add([
     TweenMax.to(".cursor", .2, {display: "none", ease: Power1.easeOut}),
     TweenMax.fromTo(".det1", 0.5,{ x:"0%", y:"200%",autoAlpha:0}, {x:"0%",y:"0%",autoAlpha:1, ease: Power4.easeInOut}),
     TweenMax.fromTo(".det2", 0.7,{ x:"0%", y:"200%",autoAlpha:0}, {x:"0%",y:"0%",autoAlpha:1, ease: Power4.easeInOut}),
