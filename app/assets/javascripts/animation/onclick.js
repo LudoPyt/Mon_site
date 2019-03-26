@@ -3,10 +3,8 @@ function menuAppear(){
 
    let menuClick = new TimelineMax();
     menuClick.add([
-    TweenMax.fromTo("#menu", .1,{autoAlpha:0}, {autoAlpha:1, ease: Power1.easeInOut}),
-    TweenMax.fromTo(".detail1", 0.9,{ x:"0%", y:"-200%",autoAlpha:0}, {x:"0%",y:"0%",autoAlpha:1, ease: Power4.easeInOut}),
-    TweenMax.fromTo(".detail2", 0.7,{ x:"0%", y:"-200%",autoAlpha:0}, {x:"0%",y:"0%",autoAlpha:1, ease: Power4.easeInOut}),
-    TweenMax.fromTo(".detail3", 0.5,{ x:"0%", y:"-200%",autoAlpha:0}, {x:"0%",y:"0%",autoAlpha:1, ease: Power4.easeInOut}),
+    // TweenMax.fromTo("#menu", .1,{autoAlpha:0}, {autoAlpha:1, ease: Power1.easeInOut}),
+    TweenMax.staggerFromTo(".menu_detail_home", 1, { x:"0%", y:"-150%",autoAlpha:0}, {x:"0%",y:"0%",autoAlpha:1, ease: Power2.easeInOut}, -.3),
     TweenMax.to(".sayhello", .1, {display: "none", ease: Power1.easeOut}),
     TweenMax.to("#a_propos", .1, {display: "none", ease: Power1.easeOut}),
     TweenMax.to("#contact", .1, {display: "none", ease: Power1.easeOut}),

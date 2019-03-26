@@ -29,9 +29,8 @@
 
 
 
-  #menu{
+  #menu_home{
 
-     z-index: O;
      position:fixed;
      top: 0;
      left: 0;
@@ -42,7 +41,7 @@
      width: 100vw;
      height: 100vh;
      background-color: none;
-     .menu_detail{
+     .menu_detail_home{
        visibility: hidden;
        width: 80%;
        display: flex;
