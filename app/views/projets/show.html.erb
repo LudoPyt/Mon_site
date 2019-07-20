@@ -4,7 +4,7 @@
       <div class="col-12 projet_head">
 
         <h1><%= @projet.title %><h1>
-        <% if @projet.lien != nil %>
+        <% unless @projet.lien.blank? %>
           <p><span class= "link_site"><%= link_to "Voir le projet", @projet.lien.html_safe, target:  :_blank %></span></p>
         <% end %>
 
