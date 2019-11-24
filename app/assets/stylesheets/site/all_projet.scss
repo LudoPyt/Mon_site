@@ -85,9 +85,10 @@
                 align-items: center;
                 justify-content: center;
                 .content-mobile{
+                    text-align: center;
                     a{
                         margin: 20px auto;
-                        font-size: 50px;
+                        font-size: 35px;
                         color:transparent;
                         -webkit-text-stroke: 1px $color_text;
                         text-stroke: 1px $color_text;
