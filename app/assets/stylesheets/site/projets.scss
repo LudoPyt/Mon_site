@@ -107,12 +107,16 @@
               text-align: center;
               padding-top: 50px;
               img{
+                margin: 10px auto;
                 display: block;
                 width: 200px;
                 height: auto;
               }
               .detail-a-propos{
-                text-align: justify;
+                p{
+                  text-align: justify;
+                }
+                
               }
           }
       }
