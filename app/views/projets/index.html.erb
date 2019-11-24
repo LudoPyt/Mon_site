@@ -1,40 +1,50 @@
 
 <div id="all_projet">
   <div class="container">
-    <% @projets.order(id: :desc).each do |projet| %>
-      <div class='content'>
-        <div class="structure">
-              <div class='all_img'>
-                <%=image_tag(projet.img1, :alt => "Ludovic Pouyaut")%>
-              </div>
-              <div class="all_detail">
-                <div class="row resize">
-                  <div class="col-12">
-                    <h1><%= projet.title %><h1>
-                    <h2 class='d-inline-block mr-4 mb-4'>Client</h2>
-                    <p class="d-inline-block "><%= projet.client %></p>
-                  </div>
+    <div class="desktop-screen d-none d-lg-block">
+      <% @projets.order(id: :desc).each do |projet| %>
+        <div class='content'>
+          <div class="structure">
+                <div class='all_img'>
+                  <%=image_tag(projet.img1, :alt => "Ludovic Pouyaut")%>
+                </div>
+                <div class="all_detail">
+                  <div class="row resize">
+                    <div class="col-12">
+                      <h1><%= projet.title %><h1>
+                      <h2 class='d-inline-block mr-4 mb-4'>Client</h2>
+                      <p class="d-inline-block "><%= projet.client %></p>
+                    </div>
 
-                  <div class="col-6">
-                    <h2>Techno</h2>
-                    <h3><%= projet.technos.html_safe %></h3>
-                  </div>
+                    <div class="col-6">
+                      <h2>Techno</h2>
+                      <h3><%= projet.technos.html_safe %></h3>
+                    </div>
 
-                  <div class="col-6">
-                    <h2>Team</h2>
-                    <h3><%= projet.team.html_safe %></h3>
-                  </div>
-                  <div class="col-12">
-                    <div class="link_projet">
-                      <%= link_to "Voir le projet", projet_path(projet) %>
+                    <div class="col-6">
+                      <h2>Team</h2>
+                      <h3><%= projet.team.html_safe %></h3>
+                    </div>
+                    <div class="col-12">
+                      <div class="link_projet">
+                        <%= link_to "Voir le projet", projet_path(projet) %>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
+          </div>
         </div>
-      </div>
-    <% end %>
+      <% end %>
+    </div>
+    <div class="mobile-screen d-flex d-lg-none">
+      <% @projets.order(id: :desc).each do |projet| %>
+        <div class='content-mobile'>
+            <%= link_to projet.title, projet_path(projet) %>
+        </div>
+      <% end %>
+    </div>
+
   </div>
 </div>
 

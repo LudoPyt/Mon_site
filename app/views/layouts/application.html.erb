@@ -28,26 +28,22 @@
             <div id="loader2"></div>
           </div>
     </div>
-    <div class='real_screen'>
-      <h2>Le responsive design arrive bientôt.</h2>
-      
-    </div>
        <div id="menu_home">
         <div class="menu_detail_home detail1">
         <%= link_to "À propos", a_propos_path %>
-          <div class="menu_p">
+          <div class="menu_p d-none d-lg-block">
             <p>Si tu veux mieux me connaitre</p>
           </div>
         </div>
         <div class="menu_detail_home detail2">
         <%= link_to "Projets", projets_path %>
-          <div class="menu_p">
+          <div class="menu_p d-none d-lg-block">
             <p>Jette un petit coup d'oeil à mon travail</p>
           </div>
         </div>
         <div class="menu_detail_home detail3">
         <%= link_to "Contact", contact_me_path %>
-          <div class="menu_p">
+          <div class="menu_p d-none d-lg-block">
             <p>N'aies pas peur je ne mords pas</p>
           </div>
         </div>
@@ -55,7 +51,7 @@
     <div class="fullscreen">
         <%= render :partial => "/site/header"  %>
 
-        <div class='ariane'>
+        <div class="ariane d-none d-lg-block">
           <%= render_breadcrumbs :separator => ' / ' %>
         </div>
 

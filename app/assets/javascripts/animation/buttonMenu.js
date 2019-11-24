@@ -1,5 +1,5 @@
 function menuAppear(){
-
+    $('#menu_home').css('display','flex')
 
    let menuClick = new TimelineMax();
     menuClick.add([
@@ -14,5 +14,10 @@ function menuAppear(){
 
 }
 
+// function pictAppear(){
+//     img = new TimelineMax();
+// }
+
 $('#appear').click(menuAppear);
 
+// $('#menu_home').mousemove(pictAppear)

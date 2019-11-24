@@ -69,3 +69,23 @@
 
   }
 }
+
+@media screen and (max-width: 500px) {
+  #contact{
+    .container{
+      h1{
+        padding:0;
+        padding-bottom: 30px;
+      }
+      input{
+        font-size: 12px;
+      }
+      textarea.form-control{
+        height: 70px;
+        font-size: 12px;
+      }
+    }
+
+  }
+  
+}
