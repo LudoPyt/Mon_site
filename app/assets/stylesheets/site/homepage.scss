@@ -153,3 +153,15 @@ body{
     }
   }
 }
+
+@media screen and (max-width: 500px) {
+  body {
+    .sayhello{
+      padding-left: 20px;
+      overflow: hidden;
+      h1 {
+        font-size: 40px;
+      }
+    }
+  }
+}
