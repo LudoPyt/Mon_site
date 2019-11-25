@@ -1,55 +1,70 @@
 <div id="a_propos" >
   <div class= "container">
-    <div class="row content">
-      <div class="col-8">
-        <div class= "row">
-          <div class="col-12 me">
-            <h1>QUI SUIS-JE ?</h1>
-            <p>Je m’appelle Ludovic Pouyaut, 27 ans. Je suis un étudiant en développement Web interactif à l'école de l'image Gobelins.
-              J’ai travaillé dans l’industrie avant de trouver un sens à ma vie. Je souhaite devenir Développeur Fullstack avec le ciel comme seule limite.
-               Tout comme Christophe Colomb, je n’ai pas peur de partir à la découverte de nouveaux horizons. </p>
+    <div class="d-none d-lg-block">
+        <div class="row content">
+          <div class="col-8">
+            <div class= "row">
+              <div class="col-12 me">
+                <h1>QUI SUIS-JE ?</h1>
+                <p>Je m’appelle Ludovic Pouyaut, 27 ans. Je suis un étudiant en développement Web interactif à l'école de l'image Gobelins.
+                  J’ai travaillé dans l’industrie avant de trouver un sens à ma vie. Je souhaite devenir Développeur Fullstack avec le ciel comme seule limite.
+                    Tout comme Christophe Colomb, je n’ai pas peur de partir à la découverte de nouveaux horizons. </p>
+              </div>
+              <div class="col-6 propos_detail">
+                <h2>Études</h2>
+
+                <h3>Bachelor Développeur interactif</h3>
+                <h3 class="mb-2"><span class="text_gris">septembre 2019<br>Gobelins L'école de l'image</span></h3>
+
+                <h3>DUT Métiers du Multimédia et de l'Internet</h3>
+                <h3 class="mb-2"><span class="text_gris">2017-juin 2019<br>IUT Bordeaux Montaigne</span></h3>
+
+
+                <h3>BTS Industrialisation de Produits Mécaniques</h3>
+                <h3 class="mb-2"><span class="text_gris">  2011-2013<br>CFAI de Tarbes en alternance</span></h3>
+
+              </div>
+              <div class="col-6 propos_detail">
+                <h2>Expériences</h2>
+
+                <h3>Développeur FullStack</h3>
+                <h3 class="mb-2"><span class="text_gris"> Leikir Web | 15 Avril - 16 Août 2019</span></h3>
+
+                <h3>Développeur FullStack</h3>
+                <h3 class="mb-2"><span class="text_gris"> Agence MIHIVAI | 18 Juin - 27 Juillet 2018</span></h3>
+
+
+                <h3>Programmeur / Opérateur CN</h3>
+                <h3 class="mb-2"><span class="text_gris">  Intérim Dassault Aviation et Mécalandes<br> | 2015-2017</span></h3>
+                <h3 class="mb-2"><span class="text_gris">  Drillstar Industries | 2013-2015</span></h3>
+
+                <h2>Compétences</h2>
+                <h3>Ruby on Rails, Javascript, HTML, CSS, SASS,<span class="text_gris"> Wordpress, PHP, Unity, C#, Swift, Photoshop, Illustrator, Indesign </span></h3>
+              </div>
+              <div class="col-4 my_img">
+
+                <%=image_tag("moi_photo.jpg", :alt => "Désolé l'image n'a pas chargée")%>
+
+              </div>
           </div>
-
-
-          <div class="col-6 propos_detail">
-            <h2>Études</h2>
-
-              <h3>Bachelor Développeur interactif</h3>
-              <h3 class="mb-2"><span class="text_gris">septembre 2019<br>Gobelins L'école de l'image</span></h3>
-
-              <h3>DUT Métiers du Multimédia et de l'Internet</h3>
-              <h3 class="mb-2"><span class="text_gris">2017-juin 2019<br>IUT Bordeaux Montaigne</span></h3>
-
-
-              <h3>BTS Industrialisation de Produits Mécaniques</h3>
-            <h3 class="mb-2"><span class="text_gris">  2011-2013<br>CFAI de Tarbes en alternance</span></h3>
-
-            </div>
-          <div class="col-6 propos_detail">
-            <h2>Expériences</h2>
-
-            <h3>Développeur FullStack</h3>
-             <h3 class="mb-2"><span class="text_gris"> Leikir Web | 15 Avril - 16 Août 2019</span></h3>
-
-            <h3>Développeur FullStack</h3>
-             <h3 class="mb-2"><span class="text_gris"> Agence MIHIVAI | 18 Juin - 27 Juillet 2018</span></h3>
-
-
-            <h3>Programmeur / Opérateur CN</h3>
-            <h3 class="mb-2"><span class="text_gris">  Intérim Dassault Aviation et Mécalandes<br> | 2015-2017</span></h3>
-            <h3 class="mb-2"><span class="text_gris">  Drillstar Industries | 2013-2015</span></h3>
-
-            <h2>Compétences</h2>
-            <h3>Ruby on Rails, Javascript, HTML, CSS, SASS,<span class="text_gris"> Wordpress, PHP, Unity, C#, Swift, Photoshop, Illustrator, Indesign </span></h3>
-          </div>
-
         </div>
       </div>
-      <div class="col-4 my_img">
-
-        <%=image_tag("moi_photo.jpg", :alt => "Désolé l'image n'a pas chargée")%>
-
+    </div>
+    <div class="d-block d-lg-none">
+      <div class="row content">
+        <div class="col-12 me">
+          <h1 style="text-align: center">QUI SUIS-JE ?</h1>
+          <p style="text-align:justify">Je m’appelle Ludovic Pouyaut, 27 ans. Je suis un étudiant en développement Web interactif à l'école de l'image Gobelins.
+            J’ai travaillé dans l’industrie avant de trouver un sens à ma vie. Je souhaite devenir Développeur Fullstack avec le ciel comme seule limite.
+            Tout comme Christophe Colomb, je n’ai pas peur de partir à la découverte de nouveaux horizons. 
+          </p>
+          <p>
+          Si tu souhaites me connaître un peu plus viens voir mon <a  style="font-weight: 800;"href="https://www.linkedin.com/in/ludovic-pouyaut-475082163/">LinkedIn</a>
+          </p>
+        </div>
       </div>
+            
+
     </div>
   </div>
 </div>
